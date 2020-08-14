@@ -47,7 +47,7 @@ Ofrecido por:
 ![javascript](https://cxl.com/wp-content/uploads/2019/09/image3.png)
 ![java](https://i.blogs.es/53044d/java/1366_521.jpg)
 
-*Machine Code*
+
 ![python byte code](https://harpaz.files.wordpress.com/2019/01/2019-01-28-170531_669x418_scrot.png)
 
 ### ¿Por qué existen muchos lenguajes de programación y cómo se diferencian?
