@@ -7,8 +7,8 @@ Ofrecido por:
 
 ## Agenda
 
-- Definición de programación y lenguaje de programación
-- Tipos de lenguajes de programación
+- ¿Qué es la programación?
+- ¿Qué es un lenguaje de programación?
 - ¿Qué es el procesador y memoria de una computadora?
 - ¿Qué necesito para comenzar a programar?
 - Comencemos con Python
@@ -18,107 +18,79 @@ Ofrecido por:
 
 ## ¿Qué es la programación?
 
-- La programación es una forma de dar a las computadoras **instrucciones** sobre lo que deben hacer a continuación.
-
-![programming](https://www.thoughtco.com/thmb/vz9sZef7c_oP5s0Aeal6lWoJdoc=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/pexels-photo-270348-598f140868e1a20011c6ec6b.jpg)
+- La programación es una forma de dar a las computadoras **instrucciones** sobre la tarea que van a hacer.
 - Estas instrucciones son otorgadas mediante *código*, y los programadores escriben código para resolver problemas o realizar una tarea.
-
-  *Referencia*:
-
-  [What is Computer Programming - CodeAcademy](https://news.codecademy.com/what-is-computer-programming/)
-
 
 ### ¿Para qué se usa?
 
-- **Comunicarse** con las computadoras.
-- **Automatizar** una tarea.
+- Manera de **comunicarse con las computadoras**.
+- Permite **automatizar una tarea**.
 - Llevar a cabo una operación que podría consumir mucho tiempo.
+
+![programming](https://www.thoughtco.com/thmb/vz9sZef7c_oP5s0Aeal6lWoJdoc=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/pexels-photo-270348-598f140868e1a20011c6ec6b.jpg)
 
 ---
 
 ## ¿Qué es un lenguaje de programación?
 
+- Es un *lenguaje estructurado* que, mediante una serie de reglas, le permite a un desarrollador crear programas que controlen el comportamiento físico (*hardware*) y lógico (*software*) de una computadora.
+
+- Constantemente, nos referimos al lenguaje de programación como *código*.
+
+- Antes de que la computadora pueda ejecutar las instrucciones que se le está otorgando, **el código pasa por una transformación**.
+
+- El lenguaje debe ser *interpretado o compilado* a *lenguaje de máquina*.
+
+- En resumen, la computadora necesita que alguien hable su idioma.
+
+*Logos de lenguajes de programación*
 ![javascript](https://cxl.com/wp-content/uploads/2019/09/image3.png)
 ![java](https://i.blogs.es/53044d/java/1366_521.jpg)
 
-- Es un *lenguaje formal* que, mediante una serie de instrucciones, le permite a un programador escribir un conjunto de órdenes, datos y algoritmos para crear programas que controlen el comportamiento físico y lógico de una computadora.
-- Mediante el uso de palabras similares al idioma inglés, la computadora "*entiende*" la tarea que se quiere llevar a cabo.
-- Aunque, antes de que la computadora pueda ejecutar las instrucciones que se le está otorgando, **el código pasa por una transformación**.
-- El lenguaje debe ser *interpretado o compilado* a *lenguaje de máquina*.
-- En resumen, la computadora necesita que alguien hable su idioma.
-
-**Estos conceptos lo aprenderán en el transcurso de su experiencia programando. No se preocupen mucho por ello ahora.**
-
-### Lenguaje Interpretado vs Compilado
-
-- Un lenguaje interpretado es convertido a *lenguaje de máquina* **a medida que es ejecutado**.
-  - Es decir, el interpretador va línea por línea, convirtiendo el código y ejecutando el lenguaje de máquina.
-- Un lenguaje compilado **se convierte primero** a lenguaje de máquina y luego se ejecuta.
-  - El compilador se encarga de validar el código.
-  - Verifica errores de sintaxis y compilación.
-- Los lenguajes de programación traen las herramientas necesarias para realizar esta transformación.
-
+*Machine Code*
 ![python byte code](https://harpaz.files.wordpress.com/2019/01/2019-01-28-170531_669x418_scrot.png)
-- El programador da la orden de interpretar o compilar el código mediante una interfaz de línea de comando, también conocido como consola o terminal.
-  - *Command Prompt* o *PowerShell* en Windows
-  - *Terminal* en MacOS y Linux
 
-### ¿Por qué existen muchos lenguajes de programación?
-- Cada lenguaje tiene su propósito (estos son algunos).
-
-  - Programación del lado del cliente (*Client Side Programming* o *Front-end*)
-    - HTML
-    - CSS
-    - JavaScript
-  - Programación del lado del servidor (*Server Side Programming* o *Back-end*)
-    - Python
-    - Java
-    - C#
-    - Go
-    - JavaScript
-  - Presentar y estructurar data o información (Estos son bien simples)
-    - JSON
-    - XML
-    - YAML
-  - Operar en bases de datos
-    - SQL
-
-  - \**Nota: Estos son varios de los **muchos** lenguajes de programación existentes.*
-
-- Sintaxis
-  - Se puede decir que es la gramática y ortografía del lenguaje de programación.
-  - Define las reglas de como el lenguaje debe ser escrito.
+### ¿Por qué existen muchos lenguajes de programación y cómo se diferencian?
+- Cada lenguaje cumple con un cierto propósito.
 
 - Algunos lenguajes realizan mejor una tarea que otro.
 
-- Algunos lenguajes de programación tienden a ser mucho más fáciles de aprender que otros.
+- También, algunos lenguajes de programación tienden a ser mucho más fáciles de aprender que otros.
 
-  - Lenguajes de alto nivel y bajo nivel
-    - Alto nivel se refiere a que el programador **no necesita saber** cómo las instrucciones son procesadas al nivel del Procesador o CPU, ni cómo se maneja la memoria de la computadora.
-    - Los lenguajes de bajo nivel interactúan con lo mencionado arriba.
-      - Son usados mayormente en desarrollo de videojuegos ya que es importante ahorrar los recursos de la computadora.
+- La sintaxis es distinta
+  - La sintaxis se puede decir que es la gramática y ortografía del lenguaje de programación.
+  - Define las reglas de como el lenguaje debe ser escrito.
 
 - Cabe destacar que no es necesario saberlos todos. 
   - Lo bueno es que existen muchas alternativas. 
   - No tienes que limitarte a un solo lenguaje.
+  
 - Una vez aprendas uno, aprender otro es sencillo. Dado que estos tienen muchas similitudes.
 
 ---
 
-## Procesador y memoria de una computadora
+## Procesador
 
-- El nivel bajo de los lenguajes de programación interactúan constantemente con estas partes de la computadora cuando son ejecutados.
-- El **procesador** o **CPU** (Central Processing Unit) lleva a cabo las instrucciones y cálculos intensivos de la computadora.
-  - Es el cerebro de la computadora.
+- El **procesador** o **CPU** (Central Processing Unit) es el cerebro de la computadora lleva a cabo las instrucciones y cálculos intensivos de la esta.
+
+![processor](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pcgamesn.com%2Fwp-content%2Fuploads%2F2019%2F01%2FIntel-i7-9700K-CPU.jpg&f=1&nofb=1)
+
+
+## Memoria
 - La **memoria**, también conocida como **RAM** (Random Access Memory), es donde la computadora almacena *temporeramente* la información. 
-  - La computadora necesita "*recordar*" información que va a utilizar en el futuro.
-  - La memoria permite acceder y obtener de forma rápida y eficiente un dato guardado.
-  - Cuando ya se no necesita esta información, la memoria es *liberada* o *limpiada*.
-    - El nivel bajo del lenguaje de programación se encarga de esta parte.
-  - La memoria es **volátil**.
-    - Cuando se apaga la computadora, la información se pierde.
-  - Las aplicaciones se cargan en la memoria.
-  - Memoria y *almacenamiento* (storage) son **términos diferentes**.
+
+- La computadora necesita "*recordar*" información que va a utilizar en el futuro.
+
+- La memoria permite acceder y obtener de forma rápida y eficiente un dato guardado.
+  - Imagina una tabla de Excel.
+  
+- Cuando ya se no necesita esta información, la memoria es *liberada* o *limpiada*.
+
+- Las aplicaciones, se cargan en la memoria.
+
+![Ram1](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fd%2Fdb%2FSwissbit_2GB_PC2-5300U-555.jpg%2F1200px-Swissbit_2GB_PC2-5300U-555.jpg&f=1&nofb=1)
+
+![Ram2](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fphucanhcdn.com%2Fmedia%2Fproduct%2F32770-1.jpg&f=1&nofb=1)
 
 ---
 
@@ -132,20 +104,20 @@ Sencillo:
   - Al fin al cabo, el código es texto.
   - Puede ser cualquier editor, sin embargo, existen editores que tienen las herramientas necesarias para editar código de manera eficiente y limpia.
   - Estaremos usando [Visual Studio Code](https://code.visualstudio.com/downloads), un editor de texto y ambiente de desarrollo gratuito creado por Microsoft.
-  
-  ![visualStudioCode](https://code.visualstudio.com/opengraphimg/opengraph-home.png)
 
 - Terminal o consola
-
-  - Abrir Powershell
+  - Abrir Powershell o Command Prompt
 
 - Interpretador / Compilador del lenguaje de programación
+
+  
+![visualStudioCode](https://code.visualstudio.com/opengraphimg/opengraph-home.png)
 ---
 
 ## Comencemos con Python
+![python](https://www.vizteams.com/wp-content/uploads/2013/08/python-logo-master.png)
 
 ### ¿Qué es Python?
-![python](https://www.vizteams.com/wp-content/uploads/2013/08/python-logo-master.png)
 - Es un lenguaje de programación interpretado, de alto nivel, orientado a clases y objetos.
   - La última parte tendrá sentido luego.
 
@@ -424,6 +396,14 @@ print(resultado * 10)
 Variables locales
 ```python
 
+  def multiplicaPorDos(a):
+    n = 2
+    return a * n
+
+print(multiplicaPorDos(4))
+print(n)
+
+# Que sucede?
 ```
 
 ### Símbolos de comparación
@@ -451,7 +431,9 @@ respuesta = (6 == 6) # cual valor se guarda en respuesta?
 
 ### Declaraciones if, else, else-if
 
-Usaremos Draw.io para explicar estos conceptos
+Diagrama hecho en Draw.io
+
+![digrama](./diagrama-ejemplo-condicional.png)
 
 ```python
 # si el numero ingresado por el usuario es mayor que 10
