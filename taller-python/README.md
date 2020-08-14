@@ -33,6 +33,9 @@ Ofrecido por:
 
 ## ¿Qué es un lenguaje de programación?
 
+![javascript](https://cxl.com/wp-content/uploads/2019/09/image3.png)
+![java](https://i.blogs.es/53044d/java/1366_521.jpg)
+
 - Es un *lenguaje estructurado* que, mediante una serie de reglas, le permite a un desarrollador crear programas que controlen el comportamiento físico (*hardware*) y lógico (*software*) de una computadora.
 
 - Constantemente, nos referimos al lenguaje de programación como *código*.
@@ -43,9 +46,7 @@ Ofrecido por:
 
 - En resumen, la computadora necesita que alguien hable su idioma.
 
-*Logos de lenguajes de programación*
-![javascript](https://cxl.com/wp-content/uploads/2019/09/image3.png)
-![java](https://i.blogs.es/53044d/java/1366_521.jpg)
+
 
 
 ![python byte code](https://harpaz.files.wordpress.com/2019/01/2019-01-28-170531_669x418_scrot.png)
