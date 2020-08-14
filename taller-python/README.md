@@ -487,8 +487,10 @@ while n > 0:
 # for loop
 for i in range(11):
   print("Hello World")
-  
+
 ```
+### Diagrama hecho en Draw.io
+![diagramaLoop](./diagrama-ejemplo-loop.png)
 ---
 
 ## ¿Qué necesito saber cuando aprendo un nuevo lenguaje de programación?
