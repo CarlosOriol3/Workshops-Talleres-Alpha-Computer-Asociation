@@ -1,6 +1,6 @@
 # Repaso COTI 3102
 
-## Capitulo 8 - Arreglos multidimensionales
+## Arreglos multidimensionales
 
 ### Ejercicios
 - 8.1 (Sum elements row by row) Write a method that returns the sum of all the elements in a specified row in a matrix using the following header:
@@ -71,7 +71,7 @@ class Main {
 
 - 8.4 (Compute the weekly hours for each employee) Suppose the weekly hours for all employees are stored in a two-dimensional array. Each row records an employee’s seven-day work hours with seven columns. For example, the following array stores the work hours for eight employees. Write a program that displays employees and their total hours in increasing order of the total hours.
 
-  ```java
+ ```java
   class Main {
   public static void main(String[] args) {
     int[][] employees = {{2, 4, 3, 4, 5, 8, 8},
@@ -93,7 +93,7 @@ class Main {
     }
   }
 }
-  ```
+```
 
 - 8.5 (Algebra: add two matrices) Write a method to add two matrices. The header of the method is as follows: 
 
@@ -156,7 +156,7 @@ class Main {
   }
 
 }
- ```
+```
 - 8.6 (Algebra: multiply two matrices) Write a method to multiply two matrices. The
   header of the method is:
 
@@ -166,7 +166,7 @@ class Main {
 
    Write a test program that prompts the user to enter two 3 * 3 matrices and displays their product. 
 
- ```java
+```java
 import java.util.Scanner;
 import java.util.Arrays;
 class Main {
@@ -228,13 +228,13 @@ class Main {
   }
 
 }
- ```
+```
  - 8.13 (Locate the smallest element) Write the following method that returns the location of the smallest element in a two-dimensional array.
  public static int[] locateSmallest(double[][] a)
 
  The return value is a one-dimensional array that contains two elements. These two elements indicate the row and column indices of the smallest element in the two-dimensional array. Write a test program that prompts the user to enter a twodimensional array and displays the location of the smallest element in the array.
 
- ```java
+```java
 import java.util.Scanner;
 import java.util.Arrays;
 class Main {
@@ -283,11 +283,11 @@ class Main {
   } 
 
 }
- ```
+```
  - 8.16 (Sort two-dimensional array) Write a method to sort a two-dimensional array using the following header:
 public static void sort(int m[][])
 
- ```java
+```java
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -329,14 +329,14 @@ class Main {
   }
 
 }
- ```
+```
 - 8.28 (Strictly identical arrays) The two-dimensional arrays m1 and m2 are strictly
 identical if their corresponding elements are equal. Write a method that returns true if m1 and m2 are strictly identical, using the following header: 
 
 public static boolean equals(int[][] m1, int[][] m2)
 
  Write a test program that prompts the user to enter two 3 * 3 arrays of integers and displays whether the two are strictly identical. 
- ```java
+```java
 import java.util.Scanner;
 import java.util.Arrays;
 
@@ -396,10 +396,178 @@ class Main {
 }
 ```
 
-## Capitulo 9 - Clases y Objetos
+##  Clases y Objetos
 
-## Capitulo 10 - Programacion orientada a objetos
+-9.6 (Stopwatch) Design a class named StopWatch. The class contains:
+■■ Private data fields startTime and endTime with getter methods.
+■■ A no-arg constructor that initializes startTime with the current time.
+■■ A method named start() that resets the startTime to the current time.
+■■ A method named stop() that sets the endTime to the current time.
+■■ A method named getElapsedTime() that returns the elapsed time for the
+stopwatch in milliseconds.
+Draw the UML diagram for the class then implement the class. Write a test program
+that measures the execution time of sorting 100,000 numbers using selection sort.
+
+- StopWatch class:
+```java
+ import java.util.Date;
+class StopWatch{
+  private long startTime;
+  private long endTime;
+
+  public StopWatch(){
+    Date date = new Date();
+    this.startTime = date.getTime();
+    this.endTime = date.getTime();
+  }
+  public void start(){
+    Date date = new Date();
+    this.startTime = date.getTime();
+  }
+  public void stop(){
+    Date date = new Date();
+    this.endTime = date.getTime();
+  }
+  public long getElapsedTime(){
+    return (this.endTime - this.startTime);
+  }
+  public long getStartTime(){
+    return this.startTime;
+  }
+  public long getEndTime(){
+    return this.endTime;
+  }
+}
+```
+ - main class: 
+```java
+import java.util.Arrays;
+
+class Main {
+  public static void main(String[] args) {
+    //inicializar el objeto
+    StopWatch time = new StopWatch();
+
+    //comenzar el stopwatch
+    time.start();
+
+    //Declarar un arreglo
+    int[] arr = {1,12,34,564,5,33,12,22,1,24,56,78,100,22,200,12,1,12,34,564,5,33,12,22,1,24,56,78,100,22,200,12,1,12,34,564,5,33,12,22,1,24,56,78,100,22,200,12,1,12,34,564,5,33,12,22,1,24,56,78,100,22,200,12};
+
+    //Aplicarle selection sort
+    selectionSort(arr);
+
+    //imprimir arreglo ordenado
+    System.out.println(Arrays.toString(arr));
+
+    //parar el stopwatch
+    time.stop();
+
+    //imprimir resultados del stopwatch
+    System.out.printf("Tiempo inicial: %d\nTiempo final: %d\nTiempo total: %d\n",time.getStartTime(),time.getEndTime(),time.getElapsedTime());
+
+  }
+
+  //selection sort
+  public static void selectionSort(int[] arr){  
+        for (int i = 0; i < arr.length - 1; i++)  
+        {  
+            int index = i;  
+            for (int j = i + 1; j < arr.length; j++){  
+                if (arr[j] < arr[index]){  
+                    index = j;//searching for lowest index  
+                }  
+            }  
+            int smallerNumber = arr[index];   
+            arr[index] = arr[i];  
+            arr[i] = smallerNumber;  
+        }  
+    }
+}
+
 
 ```
+
+
+- 10.11 (Geometry: the Circle2D class) Define the Circle2D class that contains:
+■■ Two double data fields named x and y that specify the center of the circle
+with getter methods.
+■■ A data field radius with a getter method.
+■■ A no-arg constructor that creates a default circle with (0, 0) for (x, y) and 1
+for radius.
+■■ A constructor that creates a circle with the specified x, y, and radius.
+■■ A method getArea() that returns the area of the circle.
+■■ A method getPerimeter() that returns the perimeter of the circle.
+■■ A method contains(double x, double y) that returns true if the
+specified point (x, y) is inside this circle (see Figure 10.21a).
+■■ A method contains(Circle2D circle) that returns true if the specified circle is inside this circle (see Figure 10.21b).
+■■ A method overlaps(Circle2D circle) that returns true if the specified circle overlaps with this circle (see Figure 10.21c)
+
+```java
+public class Circle2D {
+  private double x;
+  private double y;
+  private double radius;
+
+  public Circle2D() {
+    this.x = 0;
+    this.y = 0;
+    this.radius = 1;
+  }
+
+  public Circle2D(double x, double y, double radius) {
+    this.x = x;
+    this.y = y;
+    this.radius = radius;
+  }
+
+  public double getArea() {
+    return Math.PI * Math.pow(this.radius, 2);
+  }
+
+  public double getPerimeter() {
+    return (Math.PI * 2 * this.radius);
+  }
+
+  public boolean contains(double x, double y) {
+    double d = Math.sqrt(Math.pow(x - this.x, 2) + Math.pow(y - this.y, 2));
+    if( d < this.radius){
+           return true;
+         }else{
+           return false;
+         }
+  }
+
+  public boolean contains(Circle2D circle) {
+    double d = Math.sqrt(Math.pow(circle.getX() - x, 2) + Math.pow(circle.getY() - y, 2));
+    if (d <= Math.abs(this.radius - circle.getRadius())) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  public boolean overlaps(Circle2D circle) {
+    double d = Math.sqrt(Math.pow(circle.getX() - x, 2) + Math.pow(circle.getY() - y, 2));
+    if (d <= this.radius + circle.getRadius()) {
+      return true;
+    } else {
+      return false;
+    }
+
+  }
+
+  public double getX() {
+    return this.x;
+  }
+
+  public double getY() {
+    return this.y;
+  }
+
+  public double getRadius() {
+    return this.radius;
+  }
+}
 
 ```
