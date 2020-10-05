@@ -35,7 +35,7 @@ class Main {
 ```
 - 8.2 (Average the major diagonal in a matrix) Write a method that averages all the numbers in the major diagonal in an n * n matrix of double values using the following header:
 
-   public static double averageMajorDiagonal(double[][] m)
+   - public static double averageMajorDiagonal(double[][] m)
 ```java
 class Main {
   public static void main(String[] args) {
@@ -93,15 +93,15 @@ class Main {
     }
   }
 }
-```
+ ```
 
 - 8.5 (Algebra: add two matrices) Write a method to add two matrices. The header of the method is as follows: 
 
-  public static double[][] addMatrix(double[][] a, double[][] b)
+  - public static double[][] addMatrix(double[][] a, double[][] b)
 
-  In order to be added, the two matrices must have the same dimensions and the same or compatible types of elements.
+  - In order to be added, the two matrices must have the same dimensions and the same or compatible types of elements.
 
-  Write a test program that prompts the user to enter two 2 * 2 matrices and displays their sum.
+  - Write a test program that prompts the user to enter two 2 * 2 matrices and displays their sum.
  ```java
 import java.util.Scanner;
 import java.util.Arrays;
@@ -156,15 +156,15 @@ class Main {
   }
 
 }
-```
+ ```
 - 8.6 (Algebra: multiply two matrices) Write a method to multiply two matrices. The
   header of the method is:
 
-  public static double[][] multiplyMatrix(double[][] a, double[][] b)
+  - public static double[][] multiplyMatrix(double[][] a, double[][] b)
 
-   To multiply matrix a by matrix b, the number of columns in a must be the same as the number of rows in b, and the two matrices must have elements of the same or compatible types. 
+  - To multiply matrix a by matrix b, the number of columns in a must be the same as the number of rows in b, and the two matrices must have elements of the same or compatible types. 
 
-   Write a test program that prompts the user to enter two 3 * 3 matrices and displays their product. 
+  - Write a test program that prompts the user to enter two 3 * 3 matrices and displays their product. 
 
 ```java
 import java.util.Scanner;
@@ -232,7 +232,7 @@ class Main {
  - 8.13 (Locate the smallest element) Write the following method that returns the location of the smallest element in a two-dimensional array.
  public static int[] locateSmallest(double[][] a)
 
- The return value is a one-dimensional array that contains two elements. These two elements indicate the row and column indices of the smallest element in the two-dimensional array. Write a test program that prompts the user to enter a twodimensional array and displays the location of the smallest element in the array.
+- The return value is a one-dimensional array that contains two elements. These two elements indicate the row and column indices of the smallest element in the two-dimensional array. Write a test program that prompts the user to enter a twodimensional array and displays the location of the smallest element in the array.
 
 ```java
 import java.util.Scanner;
@@ -333,9 +333,10 @@ class Main {
 - 8.28 (Strictly identical arrays) The two-dimensional arrays m1 and m2 are strictly
 identical if their corresponding elements are equal. Write a method that returns true if m1 and m2 are strictly identical, using the following header: 
 
-public static boolean equals(int[][] m1, int[][] m2)
+- public static boolean equals(int[][] m1, int[][] m2)
 
- Write a test program that prompts the user to enter two 3 * 3 arrays of integers and displays whether the two are strictly identical. 
+- Write a test program that prompts the user to enter two 3 * 3 arrays of integers and displays whether the two are strictly identical. 
+
 ```java
 import java.util.Scanner;
 import java.util.Arrays;
@@ -399,14 +400,14 @@ class Main {
 ##  Clases y Objetos
 
 -9.6 (Stopwatch) Design a class named StopWatch. The class contains:
-■■ Private data fields startTime and endTime with getter methods.
-■■ A no-arg constructor that initializes startTime with the current time.
-■■ A method named start() that resets the startTime to the current time.
-■■ A method named stop() that sets the endTime to the current time.
-■■ A method named getElapsedTime() that returns the elapsed time for the
-stopwatch in milliseconds.
-Draw the UML diagram for the class then implement the class. Write a test program
-that measures the execution time of sorting 100,000 numbers using selection sort.
+
+	-  Private data fields startTime and endTime with getter methods.
+	-   A no-arg constructor that initializes startTime with the current time.
+	-  A method named start() that resets the startTime to the current time.
+	-  A method named stop() that sets the endTime to the current time.
+	-  A method named getElapsedTime() that returns the elapsed time for the stopwatch in milliseconds.
+ -  Draw the UML diagram for the class then implement the class. Write a test program
+    that measures the execution time of sorting 100,000 numbers using selection sort.
 
 - StopWatch class:
 ```java
@@ -490,18 +491,17 @@ class Main {
 
 
 - 10.11 (Geometry: the Circle2D class) Define the Circle2D class that contains:
-■■ Two double data fields named x and y that specify the center of the circle
-with getter methods.
-■■ A data field radius with a getter method.
-■■ A no-arg constructor that creates a default circle with (0, 0) for (x, y) and 1
-for radius.
-■■ A constructor that creates a circle with the specified x, y, and radius.
-■■ A method getArea() that returns the area of the circle.
-■■ A method getPerimeter() that returns the perimeter of the circle.
-■■ A method contains(double x, double y) that returns true if the
-specified point (x, y) is inside this circle (see Figure 10.21a).
-■■ A method contains(Circle2D circle) that returns true if the specified circle is inside this circle (see Figure 10.21b).
-■■ A method overlaps(Circle2D circle) that returns true if the specified circle overlaps with this circle (see Figure 10.21c)
+- Two double data fields named x and y that specify the center of the circle
+  with getter methods.
+- A data field radius with a getter method.
+-  A no-arg constructor that creates a default circle with (0, 0) for (x, y) and 1
+  for radius.
+- A constructor that creates a circle with the specified x, y, and radius.
+- A method getArea() that returns the area of the circle.
+- A method getPerimeter() that returns the perimeter of the circle.
+- A method contains(double x, double y) that returns true if the specified point (x, y) is inside this circle (see Figure 10.21a).
+- A method contains(Circle2D circle) that returns true if the specified circle is inside this circle (see Figure 10.21b).
+- A method overlaps(Circle2D circle) that returns true if the specified circle overlaps with this circle (see Figure 10.21c)
 
 ```java
 public class Circle2D {
